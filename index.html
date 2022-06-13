@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Todo list</h1>
+    </header>
+   
+    <main>
+        <div class="todo-add">
+          <input type="text" class="form-control" placeholder="Enter new todo" data-name="todo-input" />
+            <button class="btn btn-success" data-name="add-btn">Add</button>
+        </div>
+      
+
+        <div class="containerList">
+        <div class="todolist">
+          <h3>A faire</h3>
+          <ul class="list-group" data-name="todos-list">
+            <li class="list-group-item" data-id="1" draggable="true">
+              <p>todo1</p>
+              <button class="btn btn-remove" data-name="remove-btn">
+               🗑
+              </button>
+            </li>
+            <li class="list-group-item" data-id="2" draggable="true">
+              <p>todo2</p>
+              <button class="btn btn-remove" data-name="remove-btn">
+               🗑
+              </button>
+             
+            </li>
+            <li class="list-group-item" data-id="3" draggable="true">
+              <p>todo3</p>
+              <button class="btn btn-remove" data-name="remove-btn">
+               🗑
+              </button>
+              
+            </li>
+          </ul>
+        </div>
+      
+        <div class="todolist-progress">
+          <h3>En cours</h3>
+          <ul class="list-group" data-name="in-progress-list"></ul>
+        </div>
+      
+        <div class="todolist-completed">
+          <h3>Finie</h3>
+          <ul class="list-group" data-name="completed-list"></ul>
+        </div>
+      </main>
+
+<script src="index.js"></script>
+</body>
+
+</html>
